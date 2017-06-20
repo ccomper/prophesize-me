@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>What is your Identity?</title>
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- BACKGROUND IMAGE CREDIT WWW.FREEPIX.COM -->
+<body class="wrapper">
+  <main>      
+    <form action="" class="mainForm">
+      <div class="characterChoice current slide0">
+      <header>
+        <h1 id="changeMeMedia">Prophesize-Me</h1>
+        <h2>Prophesy Generator (From a Team of Real Wizards!)</h2>
+        <img class="headerImage" src="images/wizard2.png">
+      </header>
+        <p>What do you stand for?</p>
+          <label for="hero">Good</label>
+          <input type="radio" name="identity" id="hero" value="hero">
+
+          <label for="villain">Evil</label>
+          <input type="radio" name="identity" id="villain" value="villain">
+
+          <label for="between">Somewhere in Between</label>
+          <input type="radio" name="identity" id="between" value="between">
+      </div>
+      
+        <!-- end of first question -->
+
+      <div class="vehicleChoice initial slide1">
+        <p>How do you roll?</p>
+          <label for="land">Land</label>
+          <input type="radio" name="vehicle" id="land" value="land">
+
+          <label for="air">Air</label>
+          <input type="radio" name="vehicle" id="air" value="air">
+
+          <label for="sea">Sea</label>
+          <input type="radio" name="vehicle" id="sea" value="sea">
+      </div>
+      <!-- end of second section -->
+      
+      <div class="powerChoice initial slide2">
+        <p>What gives you power?</p>
+        <label for="foodOfPower">Food</label>
+        <input type="radio" name="power" id="foodOfPower" value="food">
+
+        <label for="objectOfPower">Object</label>
+        <input type="radio" name="power" id="objectOfPower" value="object">
+
+        <label for="secret">It's a secret!</label>
+        <input type="radio" name="power" id="secret" value="secret">
+      </div>
+
+      <div class="weaknessChoice initial slide3">
+        <p>What is your greatest weakness?</p>
+        <label for="activity">An activity</label>
+        <input type="radio" name="weakness" id="activity" value="activity">
+
+        <label for="weapon">A weapon</label>
+        <input type="radio" name="weakness" id="weapon" value="weapon">
+
+        <label for="circumstance">A Circumstance</label>
+        <input type="radio" name="weakness" id="circumstance" value="circumstance">
+
+    </div>
+      <!-- end of third section -->
+      <!-- insert results here concatenated in paragraph! --> 
+    <div class="initial slide4">
+      <div class="resultContainer"></div>
+      <div class="buttonsToClick">
+        <div>
+          <button type="reset" class="reset hideButton clickMe">Scrub my Identity</button>
+        </div>
+        <div class="submitContainer">
+          <input type="submit" class="submit clickMe" value="Give me a new identity!">
+        </div>
+        <div><!-- button is somehow resetting my html results?-->
+          <button type="music" class="themeMusic hideButton clickMe">Generate your new theme song!</button>
+          <audio class="musicHere"src="" autoplay></audio>
+        </div>
+      </div>
+    </div>
+    </form>
+  </main>
+  <footer>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://www.twitter.com/chriscomper "><span class="fa fa-twitter"></span>Christopher Comper</a> &amp <a href="http://www.twitter.com/RWatsondrums"><span class="fa fa-twitter"></span>Robin Watson</a></footer>
+<script src="https://use.fontawesome.com/67b59e3f70.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
